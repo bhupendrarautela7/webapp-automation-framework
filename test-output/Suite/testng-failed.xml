@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test Class 1">
+    <classes>
+      <class name="caroobi.CreateHobertLead"/>
+    </classes>
+  </test> <!-- Test Class 1 -->
+  <test name="Test Class 2">
+    <classes>
+      <class name="caroobi.LeadQueue"/>
+    </classes>
+  </test> <!-- Test Class 2 -->
+  <test name="Test Class 1(failed)">
+    <classes>
+      <class name="caroobi.LeadQueue">
+        <methods>
+          <include name="initbrowser"/>
+        </methods>
+      </class> <!-- caroobi.LeadQueue -->
+      <class name="caroobi.CreateHobertLead">
+        <methods>
+          <include name="create_lead_for_auto_offer_generation"/>
+        </methods>
+      </class> <!-- caroobi.CreateHobertLead -->
+    </classes>
+  </test> <!-- Test Class 1(failed) -->
+  <test name="Test Class 2(failed)">
+    <classes>
+      <class name="caroobi.LeadQueue">
+        <methods>
+          <include name="initbrowser"/>
+          <include name="check_lead_on_lead_queue"/>
+          <include name="check_lead_score_in_lead_queue"/>
+          <include name="apply_filters_in_lead_queue"/>
+        </methods>
+      </class> <!-- caroobi.LeadQueue -->
+    </classes>
+  </test> <!-- Test Class 2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

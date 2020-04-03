@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test Class 1">
+    <classes>
+      <class name="caroobi.createLead"/>
+    </classes>
+  </test> <!-- Test Class 1 -->
+  <test name="Test Class 2">
+    <classes>
+      <class name="caroobi.automatedOffer"/>
+    </classes>
+  </test> <!-- Test Class 2 -->
+  <test name="Test Class 2(failed)">
+    <classes>
+      <class name="caroobi.automatedOffer">
+        <methods>
+          <include name="initbrowser"/>
+          <include name="check_auto_offer_in_database_table"/>
+        </methods>
+      </class> <!-- caroobi.automatedOffer -->
+    </classes>
+  </test> <!-- Test Class 2(failed) -->
+  <test name="Test Class 2(failed)">
+    <classes>
+      <class name="caroobi.automatedOffer">
+        <methods>
+          <include name="initbrowser"/>
+          <include name="check_auto_offer_in_database_table"/>
+        </methods>
+      </class> <!-- caroobi.automatedOffer -->
+    </classes>
+  </test> <!-- Test Class 2(failed) -->
+  <test name="Test Class 2(failed)(failed)">
+    <classes>
+      <class name="caroobi.automatedOffer">
+        <methods>
+          <include name="initbrowser"/>
+          <include name="check_auto_offer_in_database_table"/>
+        </methods>
+      </class> <!-- caroobi.automatedOffer -->
+    </classes>
+  </test> <!-- Test Class 2(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

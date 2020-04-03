@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: caroobi.FirstTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.98 sec <<< FAILURE!
+testEasy(caroobi.FirstTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.Error: Unresolved compilation problem: 
+	Assert cannot be resolved
+	at caroobi.FirstTest.testEasy(FirstTest.java:29)
+

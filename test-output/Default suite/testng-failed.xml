@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="caroobi.leadQueue"/>
+      <class name="caroobi.automatedOffer"/>
+      <class name="common.TestBase"/>
+      <class name="caroobi.createLead"/>
+      <class name="caroobi.CaroobiHomePage"/>
+      <class name="caroobi.urlChecker"/>
+      <class name="common.dbConnections"/>
+      <class name="caroobi.Check_Latest_Lead_Created"/>
+      <class name="common.GetGoogleSheetData"/>
+      <class name="common.LaunchBrowser"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="caroobi.automatedOffer">
+        <methods>
+          <include name="verify_is_lead_submitted_to_databasd"/>
+          <include name="click_on_pin_textbox"/>
+          <include name="select_service_austausch_motor_on_homepage"/>
+          <include name="open_home_page_to_create_austausch_mototor_lead"/>
+          <include name="click_cta_on_homepage"/>
+          <include name="Verify_fin_screen_and_fill_fin_details"/>
+          <include name="create_lead_for_auto_offer_generation"/>
+          <include name="connect_to_database_to_verify"/>
+          <include name="clear_pin_textbox"/>
+          <include name="accept_cookies_dialog"/>
+          <include name="enter_value_in_pin_textbox"/>
+          <include name="getLead_data_from_google_sheet"/>
+          <include name="select_car_on_homepage"/>
+        </methods>
+      </class> <!-- caroobi.automatedOffer -->
+      <class name="caroobi.CaroobiHomePage">
+        <methods>
+          <include name="CheckBannerWigetsHomepage"/>
+          <include name="Check_Funnel_on_homepage"/>
+          <include name="Check_haeder_on_homepage"/>
+          <include name="OpenHomePage_test02"/>
+          <include name="Accept_Cookies_dialog"/>
+          <include name="Check_Banner_Image_on_homepage"/>
+        </methods>
+      </class> <!-- caroobi.CaroobiHomePage -->
+      <class name="caroobi.leadQueue">
+        <methods>
+          <include name="login_to_starfleet_application"/>
+          <include name="check_lead_on_lead_queue"/>
+          <include name="get_lead_to_verify_in_Lead_queue"/>
+          <include name="check_lead_score_in_lead_queue"/>
+          <include name="apply_filters_in_lead_queue"/>
+        </methods>
+      </class> <!-- caroobi.leadQueue -->
+      <class name="caroobi.createLead">
+        <methods>
+          <include name="click_on_direct_navigation_button"/>
+          <include name="checkin_page_fill_address_details"/>
+          <include name="click_and_close_price_details_popup"/>
+          <include name="funnal_go_next_from_services"/>
+          <include name="choose_service_dropdown_on_homepage"/>
+          <include name="funnal_choose_baujahr"/>
+          <include name="go_next_from_offer_price_details"/>
+          <include name="accept_cookies_dialog"/>
+          <include name="click_on_direct_navigation_Close"/>
+          <include name="checkin_page_fill_fin_details"/>
+          <include name="click_and_open_price_details_popup"/>
+          <include name="getLead_data_from_google_sheet"/>
+          <include name="Save_offer_email_input"/>
+          <include name="funnal_choose_model"/>
+          <include name="clear_pin_textbox"/>
+          <include name="funnal_choose_services"/>
+          <include name="fill_and_submit_lead_email_details"/>
+          <include name="close_send_offer_success_popup"/>
+          <include name="fill_and_submit_lead_mobile_number_details"/>
+          <include name="get_lead"/>
+          <include name="checkin_page_scroll_to_info"/>
+          <include name="click_on_pin_textbox"/>
+          <include name="save_offer"/>
+          <include name="funnal_choose_karosserieform"/>
+          <include name="open_home_page_to_create_lead"/>
+          <include name="checkin_page_accordian_close"/>
+          <include name="select_car_on_homepage"/>
+          <include name="check_select_service_dropdown_on_homepage"/>
+          <include name="click_on_skip_date_selection"/>
+          <include name="enter_value_in_pin_textbox"/>
+          <include name="checkin_page_accordian_open"/>
+          <include name="click_homepage_cta"/>
+          <include name="more_mechanic_list_open_close"/>
+          <include name="checkin_page_fill_comments"/>
+          <include name="Click_next_button_from_mechanic_screen"/>
+          <include name="fill_and_submit_lead_name_details"/>
+          <include name="connect_rocket_database"/>
+          <include name="funnal_choose_model_family"/>
+          <include name="save_offer_email_button_click"/>
+        </methods>
+      </class> <!-- caroobi.createLead -->
+      <class name="caroobi.Check_Latest_Lead_Created">
+        <methods>
+          <include name="Get_Latest_lead_Created"/>
+        </methods>
+      </class> <!-- caroobi.Check_Latest_Lead_Created -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

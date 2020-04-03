@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>TestNG:  Test Class 1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test Class 1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 27 16:25:23 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>80 seconds (80573 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='caroobi.createLead.Click_next_button_from_mechanic_screen()'><b>Click_next_button_from_mechanic_screen</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.Save_offer_email_input()'><b>Save_offer_email_input</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>2</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.accept_cookies_dialog()'><b>accept_cookies_dialog</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.check_select_service_dropdown_on_homepage()'><b>check_select_service_dropdown_on_homepage</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.checkin_page_accordian_close()'><b>checkin_page_accordian_close</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.checkin_page_accordian_open()'><b>checkin_page_accordian_open</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>0</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.checkin_page_fill_address_details()'><b>checkin_page_fill_address_details</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>6</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.checkin_page_fill_comments()'><b>checkin_page_fill_comments</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>6</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.checkin_page_fill_fin_details()'><b>checkin_page_fill_fin_details</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.checkin_page_scroll_to_info()'><b>checkin_page_scroll_to_info</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.choose_service_dropdown_on_homepage()'><b>choose_service_dropdown_on_homepage</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.clear_pin_textbox()'><b>clear_pin_textbox</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.click_and_close_price_details_popup()'><b>click_and_close_price_details_popup</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>6</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.click_and_open_price_details_popup()'><b>click_and_open_price_details_popup</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>2</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.click_homepage_cta()'><b>click_homepage_cta</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>3</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.click_on_direct_navigation_Close()'><b>click_on_direct_navigation_Close</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>2</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.click_on_direct_navigation_button()'><b>click_on_direct_navigation_button</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.click_on_pin_textbox()'><b>click_on_pin_textbox</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>6</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.click_on_skip_date_selection()'><b>click_on_skip_date_selection</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.close_send_offer_success_popup()'><b>close_send_offer_success_popup</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.enter_value_in_pin_textbox()'><b>enter_value_in_pin_textbox</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>0</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.fill_and_submit_lead_email_details()'><b>fill_and_submit_lead_email_details</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.fill_and_submit_lead_mobile_number_details()'><b>fill_and_submit_lead_mobile_number_details</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.fill_and_submit_lead_name_details()'><b>fill_and_submit_lead_name_details</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.funnal_choose_baujahr()'><b>funnal_choose_baujahr</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>3</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.funnal_choose_karosserieform()'><b>funnal_choose_karosserieform</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>3</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.funnal_choose_model()'><b>funnal_choose_model</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>3</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.funnal_choose_model_family()'><b>funnal_choose_model_family</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>4</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.funnal_choose_services()'><b>funnal_choose_services</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.funnal_go_next_from_services()'><b>funnal_go_next_from_services</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.go_next_from_offer_price_details()'><b>go_next_from_offer_price_details</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.more_mechanic_list_open_close()'><b>more_mechanic_list_open_close</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.open_home_page_to_create_lead()'><b>open_home_page_to_create_lead</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>3</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.save_offer()'><b>save_offer</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>2</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.save_offer_email_button_click()'><b>save_offer_email_button_click</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>2</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.select_car_on_homepage()'><b>select_car_on_homepage</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>1</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+<tr>
+<td title='caroobi.createLead.validate_created_lead_in_database_table()'><b>validate_created_lead_in_database_table</b><br>Test class: caroobi.createLead</td>
+<td></td>
+<td>6</td>
+<td>caroobi.createLead@56cbfb61</td></tr>
+</table><p>
+</body>
+</html>

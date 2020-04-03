@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 4 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.LeadQueue" hash-for-method="apply_filters_in_lead_queue">apply_filters_in_lead_queue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.LeadQueue" hash-for-method="check_lead_on_lead_queue">check_lead_on_lead_queue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.LeadQueue" hash-for-method="check_lead_score_in_lead_queue">check_lead_score_in_lead_queue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.CreateHobertLead" hash-for-method="create_lead_for_auto_offer_generation">create_lead_for_auto_offer_generation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.CreateHobertLead" hash-for-method="Verify_fin_screen_and_fill_fin_details">Verify_fin_screen_and_fill_fin_details</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.CreateHobertLead" hash-for-method="accept_cookies_dialog">accept_cookies_dialog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.CreateHobertLead" hash-for-method="clear_pin_textbox">clear_pin_textbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.CreateHobertLead" hash-for-method="click_cta_on_homepage">click_cta_on_homepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.CreateHobertLead" hash-for-method="click_on_pin_textbox">click_on_pin_textbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.CreateHobertLead" hash-for-method="connect_to_database_to_verify">connect_to_database_to_verify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.CreateHobertLead" hash-for-method="enter_value_in_pin_textbox">enter_value_in_pin_textbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.CreateHobertLead" hash-for-method="getLead_data_from_google_sheet">getLead_data_from_google_sheet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.LeadQueue" hash-for-method="get_lead_to_verify_in_Lead_queue">get_lead_to_verify_in_Lead_queue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.LeadQueue" hash-for-method="login_to_starfleet_application">login_to_starfleet_application</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.CreateHobertLead" hash-for-method="open_home_page_to_create_austausch_mototor_lead">open_home_page_to_create_austausch_mototor_lead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.CreateHobertLead" hash-for-method="select_car_on_homepage">select_car_on_homepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.CreateHobertLead" hash-for-method="select_service_austausch_motor_on_homepage">select_service_austausch_motor_on_homepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="caroobi.CreateHobertLead" hash-for-method="verify_is_lead_submitted_to_databasd">verify_is_lead_submitted_to_databasd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">caroobi.LeadQueue</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="apply_filters_in_lead_queue">
+                  </a> <!-- apply_filters_in_lead_queue -->
+                  <span class="method-name">apply_filters_in_lead_queue</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;lead_age_hours_chosen&apos;]&quot;}
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.38.552518 (183d19265345f54ce39cbb94cf81ba5f15905011),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Homebells-MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:9b:91e7:c4a0:d876%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552518 (183d19265345f5..., userDataDir: /var/folders/jq/rrf_qymx39s...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: 7c67f47f70b68d4e98c55732537d02ec
+*** Element info: {Using=xpath, value=//*[@id=&apos;lead_age_hours_chosen&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at common.TestBase.scrolltoElement(TestBase.java:521)
+	at caroobi.LeadQueue.apply_filters_in_lead_queue(LeadQueue.java:51)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_lead_on_lead_queue">
+                  </a> <!-- check_lead_on_lead_queue -->
+                  <span class="method-name">check_lead_on_lead_queue</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: Lead is not synced, Testcase is failed.
+	at junit.framework.Assert.fail(Assert.java:57)
+	at caroobi.LeadQueue.check_lead_on_lead_queue(LeadQueue.java:155)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_lead_score_in_lead_queue">
+                  </a> <!-- check_lead_score_in_lead_queue -->
+                  <span class="method-name">check_lead_score_in_lead_queue</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: Lead is not synced So can&apos;t check lead score.
+	at junit.framework.Assert.fail(Assert.java:57)
+	at caroobi.LeadQueue.check_lead_score_in_lead_queue(LeadQueue.java:179)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">caroobi.CreateHobertLead</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="create_lead_for_auto_offer_generation">
+                  </a> <!-- create_lead_for_auto_offer_generation -->
+                  <span class="method-name">create_lead_for_auto_offer_generation</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at common.TestBase.click(TestBase.java:451)
+	at caroobi.CreateHobertLead.create_lead_for_auto_offer_generation(CreateHobertLead.java:242)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">caroobi.LeadQueue</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_lead_to_verify_in_Lead_queue">
+                  </a> <!-- get_lead_to_verify_in_Lead_queue -->
+                  <span class="method-name">get_lead_to_verify_in_Lead_queue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_to_starfleet_application">
+                  </a> <!-- login_to_starfleet_application -->
+                  <span class="method-name">login_to_starfleet_application</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">caroobi.CreateHobertLead</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_fin_screen_and_fill_fin_details">
+                  </a> <!-- Verify_fin_screen_and_fill_fin_details -->
+                  <span class="method-name">Verify_fin_screen_and_fill_fin_details</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="accept_cookies_dialog">
+                  </a> <!-- accept_cookies_dialog -->
+                  <span class="method-name">accept_cookies_dialog</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clear_pin_textbox">
+                  </a> <!-- clear_pin_textbox -->
+                  <span class="method-name">clear_pin_textbox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_cta_on_homepage">
+                  </a> <!-- click_cta_on_homepage -->
+                  <span class="method-name">click_cta_on_homepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_on_pin_textbox">
+                  </a> <!-- click_on_pin_textbox -->
+                  <span class="method-name">click_on_pin_textbox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="connect_to_database_to_verify">
+                  </a> <!-- connect_to_database_to_verify -->
+                  <span class="method-name">connect_to_database_to_verify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enter_value_in_pin_textbox">
+                  </a> <!-- enter_value_in_pin_textbox -->
+                  <span class="method-name">enter_value_in_pin_textbox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLead_data_from_google_sheet">
+                  </a> <!-- getLead_data_from_google_sheet -->
+                  <span class="method-name">getLead_data_from_google_sheet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="open_home_page_to_create_austausch_mototor_lead">
+                  </a> <!-- open_home_page_to_create_austausch_mototor_lead -->
+                  <span class="method-name">open_home_page_to_create_austausch_mototor_lead</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="select_car_on_homepage">
+                  </a> <!-- select_car_on_homepage -->
+                  <span class="method-name">select_car_on_homepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="select_service_austausch_motor_on_homepage">
+                  </a> <!-- select_service_austausch_motor_on_homepage -->
+                  <span class="method-name">select_service_austausch_motor_on_homepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_is_lead_submitted_to_databasd">
+                  </a> <!-- verify_is_lead_submitted_to_databasd -->
+                  <span class="method-name">verify_is_lead_submitted_to_databasd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/bhupendra/Desktop/automation/crispy-pancake/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test name=&quot;Test Class 1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;caroobi.CreateHobertLead&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test Class 1 --&gt;
+  &lt;test name=&quot;Test Class 2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;caroobi.LeadQueue&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test Class 2 --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test Class 1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test Class 2 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'login_to_starfleet_application')
+data.setCell(0, 2, 'caroobi.LeadQueue')
+data.setCell(0, 3, 112016);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'create_lead_for_auto_offer_generation')
+data.setCell(1, 2, 'caroobi.CreateHobertLead')
+data.setCell(1, 3, 37056);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'apply_filters_in_lead_queue')
+data.setCell(2, 2, 'caroobi.LeadQueue')
+data.setCell(2, 3, 32051);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Verify_fin_screen_and_fill_fin_details')
+data.setCell(3, 2, 'caroobi.CreateHobertLead')
+data.setCell(3, 3, 31049);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verify_is_lead_submitted_to_databasd')
+data.setCell(4, 2, 'caroobi.CreateHobertLead')
+data.setCell(4, 3, 30995);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'check_lead_score_in_lead_queue')
+data.setCell(5, 2, 'caroobi.LeadQueue')
+data.setCell(5, 3, 30041);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'select_service_austausch_motor_on_homepage')
+data.setCell(6, 2, 'caroobi.CreateHobertLead')
+data.setCell(6, 3, 16569);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'open_home_page_to_create_austausch_mototor_lead')
+data.setCell(7, 2, 'caroobi.CreateHobertLead')
+data.setCell(7, 3, 7365);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'accept_cookies_dialog')
+data.setCell(8, 2, 'caroobi.CreateHobertLead')
+data.setCell(8, 3, 6138);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'check_lead_on_lead_queue')
+data.setCell(9, 2, 'caroobi.LeadQueue')
+data.setCell(9, 3, 5020);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'connect_to_database_to_verify')
+data.setCell(10, 2, 'caroobi.CreateHobertLead')
+data.setCell(10, 3, 4020);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'getLead_data_from_google_sheet')
+data.setCell(11, 2, 'caroobi.CreateHobertLead')
+data.setCell(11, 3, 1207);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'enter_value_in_pin_textbox')
+data.setCell(12, 2, 'caroobi.CreateHobertLead')
+data.setCell(12, 3, 271);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'select_car_on_homepage')
+data.setCell(13, 2, 'caroobi.CreateHobertLead')
+data.setCell(13, 3, 70);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'click_on_pin_textbox')
+data.setCell(14, 2, 'caroobi.CreateHobertLead')
+data.setCell(14, 3, 65);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'click_cta_on_homepage')
+data.setCell(15, 2, 'caroobi.CreateHobertLead')
+data.setCell(15, 3, 61);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'clear_pin_textbox')
+data.setCell(16, 2, 'caroobi.CreateHobertLead')
+data.setCell(16, 3, 36);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'get_lead_to_verify_in_Lead_queue')
+data.setCell(17, 2, 'caroobi.LeadQueue')
+data.setCell(17, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">caroobi.LeadQueue</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initbrowser(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">caroobi.CreateHobertLead</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getLead_data_from_google_sheet</span>
+                <span class="method-start">1974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">open_home_page_to_create_austausch_mototor_lead</span>
+                <span class="method-start">3182 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">accept_cookies_dialog</span>
+                <span class="method-start">10548 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">select_service_austausch_motor_on_homepage</span>
+                <span class="method-start">16687 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">select_car_on_homepage</span>
+                <span class="method-start">33256 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_on_pin_textbox</span>
+                <span class="method-start">33326 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clear_pin_textbox</span>
+                <span class="method-start">33392 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enter_value_in_pin_textbox</span>
+                <span class="method-start">33429 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_cta_on_homepage</span>
+                <span class="method-start">33700 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">create_lead_for_auto_offer_generation</span>
+                <span class="method-start">33762 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_fin_screen_and_fill_fin_details</span>
+                <span class="method-start">70825 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">connect_to_database_to_verify</span>
+                <span class="method-start">101875 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_is_lead_submitted_to_databasd</span>
+                <span class="method-start">105896 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">caroobi.LeadQueue</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login_to_starfleet_application</span>
+                <span class="method-start">141927 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">apply_filters_in_lead_queue</span>
+                <span class="method-start">253944 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">get_lead_to_verify_in_Lead_queue</span>
+                <span class="method-start">285997 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">check_lead_on_lead_queue</span>
+                <span class="method-start">285998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">check_lead_score_in_lead_queue</span>
+                <span class="method-start">291019 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
